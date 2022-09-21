@@ -134,6 +134,9 @@ const controlAddRecipe = async function (newRecipe) {
   }
   //upload the new rcipe data
 };
+const test = function () {
+  console.log('Welcome to the application!');
+};
 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -143,6 +146,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResult);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  test();
 };
 
 init();
